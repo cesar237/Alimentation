@@ -1,0 +1,10 @@
+class admin.controlleur.Employe:
+    - complete ajouter(Gestionnaire)
+    - complete supprimmer(Gestionnaire)
+
+class admin.controlleur.FournisseurC
+    - complete ajouter(Fournisseur)
+    - complete supprimmer(Fournisseur)
+
+class admin.Historique and admin.Statistiques
+    - complete all
