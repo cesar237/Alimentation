@@ -1,0 +1,64 @@
+L'interface Utilisateur
+	
+	les caractéristiques :
+		. style dashboard
+		. material design
+		. interface simple, non chargée
+
+	Les différentes vues:
+		- vue commune
+			. parametre de gestion des infos de l'employe en cours
+
+		- vue du directeur :
+			. statistiques de la boutique
+			. paramètres de gestion d'employé et de fournisseur
+			. etat du stock (et les tableaux qui vont avec)
+
+		- vue de la caissière
+			. etat du stock
+			. vendre article
+
+		- vue du magazinier
+			. etat du stock
+			. ajouter article
+			. modifier article
+
+		- ecran de connexion
+
+	Le contenu des différents éléments : 
+		- ecran de connexion
+			. login
+			. password
+			. type?
+
+		- paramètre de gestion des infos de l'employe en cours
+			. photos (modifier)
+			. nom complet (modifier)
+			. login (modifier)
+		- statistiques de la boutique
+			. a chart for evolution des ventes, bénéfices, pertes
+			. a pie chart for préférence des produits et catégories
+			. un text field pour les historiques de vente, d'achats, etc.
+		- paramètres de gestion d'employé et de fournisseur
+			. une fiche d'information pour tous les employés
+				- photo
+				- nom complet
+				- login
+				- actif/inactif
+				- type
+			. des options de modification (activation, désactivation, modifications, etc.)
+		- etat du stock:
+			. un tableau des produits (disponible, ou tous)
+			. un bouton pour l'ajout (vue magazinier)
+			. un onglet catégories
+			. une barre de recherche
+			. une barre de filtre?
+		- vendre article
+			description : il d'agit d'afficher tout d'abord une facture(tableau) vide avec des boutons ajouter, supprimer, modifier qui permettront d'ajouter une commande à la facture en cours.
+			Il serait aussi important d'ajouter un bouton imprimer pour l'impression de la facture.
+			. un tableau des commandes
+			. trois boutons ajouter, modifier, supprimer
+			. une fenetre fille commande (ou un onglet) qui permet d'ajouter une commande avec toutes les informations nécessaires
+		- ajouter, modifier un produit au stock
+			description : il s'agit d'une option affichée pour le magazinier qui lui permet d'ajouter un article au stock. C'est un bouton qui ouvre une fenetre fille - formulaire - (ou un onglet) afin de permettre a l'utilisateur de remplir les informations ncessaires pour l'ajout d'un nouveau produit.
+			. avec le tableau d'état, on retrouve à coté des boutons ajouter, modifier et supprimer qui permettent de mettre a jour des produit.

@@ -1,0 +1,69 @@
+Projet Alimentation
+
+use Case Diagramm
+
+les utilisateurs :
+	- Le gestionnaire de la boutique
+	- Les caissiers
+	- les magaziniers
+	- l'admin systeme
+	- client (passif)
+	- fournisseur (passif)
+
+Un utilisateurs peut cumuler plusieurs rôles?
+
+Les fonctions de chaque utilisateur : 
+	- gestionnaire :
+		. gérer les employés (mise a jour, suppression, ajout)
+		. gérer les fournisseurs (mise a jour, suppresion, ajout)
+		. consulter l'état de la boutique (quels sont les produits présents), les statistiques de ventes, historique des ventes, ...)
+		. ajouter des produits dans la boutique (confirmation d'ajout)
+
+	- caissier
+		. consulter l'état de la boutique (les produits disponibles)
+		. vendre des produits a des clients (enregistrer les ventes, produire des factures, ...)
+
+	- magazinier
+		. consulter l'état de la boutique (les produits présents)
+		. gérer les produits du stock (ajouter, mettre a jour)
+
+
+Les cas d'utilisation :
+	- gestion des employés, fournisseurs :
+		. ajout
+		. suppression
+		. mise a jour (actif)
+	- consulter l'état de la boutique :
+		. afficher les informations sur les produits :
+			* disponibles a la vente (actifs)
+			* tous les produits (actifs et non)
+		. afficher l'historique
+			* ventes
+			* stockage
+			* métainformations (ajout d'employés, suppression d'employés, de fournisseurs, ...)
+		. afficher les statistiques de vente
+			* les meilleures ventes (produits)
+			* l'evolution des ventes
+			* les bénéfices
+			* les pertes
+	- confirmer l'ajout des produits
+	- vendre des produits
+		-> passe par la consultation des produits dispo a la vente
+		. produire une facture
+	- gestion du stock
+		. ajout produit
+		. suppression produit
+		. mise a jour infos produit
+
+Les paquets :
+	. admin
+		. employé
+		. fournisseur
+		. infos
+			. historique
+			. statistiques
+	. boutique
+		. vente
+		. stockage
+			. ajout
+			. consultation

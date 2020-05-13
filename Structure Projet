@@ -1,0 +1,84 @@
+Structure Projet
+
+	. admin
+		. modele
+			- Gestionnaire
+			- Fournisseur
+		. controlleur
+			- Employe
+				> ajouter(Gestionnaire) 
+				> supprimer(Gestionnaire) 
+				> activer(Gestionnaire) 
+				> desactiver(Gestionnaire) 
+			- Fournisseur
+				> ajouter(Fournisseur)
+				> supprimer(Fournisseur)
+				> modifierAdresse(Fournisseur)
+				> modifierTel(Fournisseur)
+		. Infos
+			> chargerInfos()
+			. Historique
+				- val fichierLog
+				> consulterTout()
+				> consulterVentes()
+				> consulterStockage()
+				> consulterMeta()
+			. Statistiques
+				- val evolutionVentes
+				- val meilleuresVentes
+				- benefices
+				> consulterTout()
+				> consulterEvolutionVentes()
+				> consulterMeilleuresventes()
+				> consulterBenefices()
+
+	. boutique
+		. modele
+			- Produit
+			- Categorie
+		
+		- Initialisation
+			> chargerProduits(listeProduits)
+			> chargerProduitsDisponibles(listeProduitsDisponibles)
+		
+		. vente
+			. modele 
+				- Client
+				- LigneFacture
+				- Facture
+					> imprimer()
+			. Vente
+				- val facture composed of ligneFacture
+				- val client
+				- val caissier
+				> ajouterCommande(Produit)
+				> supprimmerCommande()
+				> finaliserVente()
+				> modifierCommande(Produit)
+
+		. stockage
+			. modele
+				- GestionStock
+			. Gestion
+				- val listeProduits
+				- val gestionnaire
+				> ajouterProduit(Produit)
+				> supprimerProduit(Produit)
+				> modifierQte(Produit)
+				> activer(Produit)
+				> desactiver(Produit)
+				> modifierPrixVente(Produit)
+				> modifierPrixAchat(Produit)
+				> modifierDescription(Produit)
+				> finaliserGestion()
+			. Etat
+				> consulterTousProduits()
+				> listerOperationsGestion()
+				> consulterProduitsDispo()
+	
+	. app
+		- App
+			> main()
+
+	. gui
+		- 
