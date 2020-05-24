@@ -15,22 +15,24 @@ Structure Projet
 				> supprimer(Fournisseur)
 				> modifierAdresse(Fournisseur)
 				> modifierTel(Fournisseur)
-		. Infos
-			> chargerInfos()
-			. Historique
-				- val fichierLog
-				> consulterTout()
-				> consulterVentes()
-				> consulterStockage()
-				> consulterMeta()
-			. Statistiques
-				- val evolutionVentes
-				- val meilleuresVentes
-				- benefices
-				> consulterTout()
-				> consulterEvolutionVentes()
-				> consulterMeilleuresventes()
-				> consulterBenefices()
+	. Infos
+		> chargerInfos()
+		
+		
+		. Historique
+			- val fichierLog
+			> consulterTout()
+			> consulterVentes()
+			> consulterStockage()
+			> consulterMeta() // Non nécessaire
+		. Statistiques
+			- val evolutionVentes
+			- val meilleuresVentes
+			- benefices
+			> consulterTout()
+			> consulterEvolutionVentes()
+			> consulterMeilleuresventes()
+			> consulterBenefices()
 
 	. boutique
 		. modele
