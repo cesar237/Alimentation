@@ -1,0 +1,31 @@
+Taf :
+    - connexion a la base de donnée
+    - manipulation des données
+
+1. Connexion a la base de données
+    a- les specs
+        - la base de données est installée en local
+        - il faut normaliser les noms
+        - utiliser JPA
+     
+    b- la procédure
+        <Tsopgni s'en charge avec quelques gars>
+
+    Mais pour que ca marche, il faudra que les classes métier soient    implémentées avant.
+
+2. Manipulation des données
+    a- les specs
+        ici, il faut aussi normaliser les noms de variable et adopter un même style pour tout le monde. Comme la connexion se fera par JPA, il faudra suivre les specs de JPA.
+     
+    b- la procédure
+        - chaque groupe commence d'abord par coder les classes métiers pour que la connexion avance dans leur taf.
+        - Ensuite on implémente juste les fonctions de manipulation des données
+
+
+
+Le travail sera divisé par package. Il y a 5 paquets:
+    - admin : gestion des employés et des fournisseurs
+    - infos : gestion des informations de gestion de la boutique
+    - initialisation : connexion a la base de données et linkage
+    - vente : mécanismes liés à la mise en vente des produits
+    - stockage : mécanismes liés à la mise a jour et à l'ajout de nouveaux produits dans la boutique
